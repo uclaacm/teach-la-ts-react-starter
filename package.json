@@ -6,7 +6,7 @@
     "lint": "npx eslint '**/*.tsx' '**/*.ts' && npx stylelint '**/*.css' '**/*.scss'"
   },
   "dependencies": {
-    "@types/react": "^16.9.36",
+    "@types/react": "^17.0.8",
     "@types/react-dom": "^16.9.8",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.1",
