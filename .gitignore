@@ -5,14 +5,14 @@ node_modules/
 dist/
 
 # dependencies
-/.pnp
+*.pnp/
 .pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
-/build
+build/
 
 # Never commit individual sessions.DS_Store
 .vscode/
