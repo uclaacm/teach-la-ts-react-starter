@@ -15,7 +15,8 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-react": "^7.24.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "webpack-manifest-plugin": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
