@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -30,10 +31,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', // TODO: YOINK TLA LOGO
+      template: './public/index.html',
       favicon: './public/favicon.svg',
       filename: './index.html',
     }),
+    new WebpackManifestPlugin(),
     new CleanWebpackPlugin(),
   ],
 };

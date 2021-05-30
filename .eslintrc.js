@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
+    'airbnb',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,7 +23,6 @@ module.exports = {
     'import',
     'react',
     '@typescript-eslint',
-    'airbnb',
   ],
   rules: {
     'linebreak-style': [ 'error', 'unix' ],
