@@ -3,19 +3,17 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "npx eslint '**/*.tsx' '**/*.ts' && npx stylelint '**/*.css' '**/*.scss'",
-    "lint-fix": "npx eslint --fix '**/*.tsx' '**/*.ts' && npx stylelint --fix '**/*.css' '**/*.scss'"
+    "lint": "npx eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
+    "lint-fix": "npx eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\""
   },
   "dependencies": {
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
-    "eslint": "^7.27.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-react": "^7.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
     "webpack-manifest-plugin": "^3.1.1"
   },
   "devDependencies": {
@@ -23,7 +21,7 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.25.0",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
@@ -32,8 +30,14 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "core-js": "^3.13.1",
     "css-loader": "^5.2.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-airbnb": "^0.0.1-security",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",

@@ -2,16 +2,20 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import '../styles/App.scss';
 
-function App() {
+function App() : JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <p>
-          Edit <code>src/components/App.tsx</code> and save to reload.
+          Edit
+          {' '}
+          <code>src/components/App.tsx</code>
+          {' '}
+          and save to reload.
         </p>
         <a
-          className="App-link"
+          className="app-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
