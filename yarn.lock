@@ -4159,7 +4159,7 @@ eslint-config-airbnb-typescript@^12.3.1:
     eslint-config-airbnb "^18.2.0"
     eslint-config-airbnb-base "^14.2.0"
 
-eslint-config-airbnb@^18.2.0, eslint-config-airbnb@^18.2.1:
+eslint-config-airbnb@^18.2.0:
   version "18.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.2.1.tgz#b7fe2b42f9f8173e825b73c8014b592e449c98d9"
   integrity sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==
@@ -4183,11 +4183,6 @@ eslint-module-utils@^2.6.1:
   dependencies:
     debug "^3.2.7"
     pkg-dir "^2.0.0"
-
-eslint-plugin-airbnb@^0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-airbnb/-/eslint-plugin-airbnb-0.0.1-security.tgz#c9150fbc5c31ee78f02595edb6079bf591ddb72a"
-  integrity sha512-etPWgqKnv1plcSIt2cHZ/wgH5uQTSzFi4rnvr3YKMWdMzKb8Ca7LHP+F2IODv/J3wuzvkq9mCzwGxEG85KsioQ==
 
 eslint-plugin-import@^2.22.0:
   version "2.23.4"
