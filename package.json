@@ -4,8 +4,8 @@
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint-staged": "npx lint-staged",
-    "lint-full": "npx eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
-    "lint-full-fix": "npx eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\"",
+    "lint": "npx eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
+    "lint-fix": "npx eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "prepare": "husky install"
   },
   "dependencies": {
