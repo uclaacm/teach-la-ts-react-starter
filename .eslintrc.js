@@ -26,6 +26,8 @@ module.exports = {
   ],
   rules: {
     // A few more opinions in addition to the Airbnb TS Lint Config
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
     
     // 'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
     '@typescript-eslint/no-require-imports': ['error'],
