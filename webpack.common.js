@@ -36,26 +36,6 @@ module.exports = {
       favicon: './public/favicon.svg',
       filename: './index.html',
     }),
-    // Serves the manifest.json file
-    new ManifestPlugin({
-      filename: "manifest.json",
-      name: 'Your App Name Here',
-      short_name: 'App Name',
-      description: 'An amazing TeachLA React Website :D',
-      background_color: '#ffffff',
-      theme_color: '#000000',
-      icons: [
-        {
-          src: path.resolve('./public/favicon512.png'),
-          sizes: [192, 512] // multiple sizes
-        },
-        {
-          src: path.resolve('./public/favicon.svg'),
-          size: '1024x1024',
-          purpose: 'maskable'
-        }
-      ]
-    }),
     // Serves a file `./asset-manifest.json` which indicates all the asset paths
     new WebpackManifestPlugin({
       fileName: 'asset-manifest.json'
