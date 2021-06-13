@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
 
 echo "Fixing any lint errors before commit!"
 yarn lint-fix
