@@ -106,6 +106,8 @@ yarn install
 yarn prepare
 ```
 
+(If the above commands don't work even after installing yarn via npm, check this [npm installation guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable), click on alternatives, choose your operating system, and follow the steps there!)
+
 (We handle the yarn and npm conflict issues within our `.gitignore` we set up so dw about it!)
 To start our app, you just need to run `yarn start`!
 
@@ -118,6 +120,16 @@ And to build our project for production (with CRA and Webpack's bundling with al
 ```
 yarn run build
 ```
+
+### Before you start coding...
+
+To match ACM's design standards, we will be using Westwood Sans (built by ACM Design) as our font for our learning labs! Here are the steps to install them on your computer:
+
+- Clone the [Westwood_Sans repo](https://github.com/uclaacm/Westwood_Sans) to easily keep up with updates to the font and then open `versions/{latest version}/WestwoodSans-Regular.ttf`, OR simply download that file directly from the repository website
+  - Mac: there will be an `Install Font` button in the bottom right corner of the Font Book popup
+  - Windows: right-click the file and select Install
+
+Westwood Sans is already set as the default font-family for your learning lab, so now you should be good to go!
 
 ## Contribution Workflow
 
