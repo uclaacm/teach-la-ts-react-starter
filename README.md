@@ -17,24 +17,9 @@ What's this? This is a template repository that sets up a few minor systems for 
 - has a little bit of documentation for new people!
 - Some extra stuff like changing the app logo to TeachLA's logo and setting up the `src` directory for further development!
 
-## Overview
-
-... explain what your project is here! What technology you used, who made it, and what it was for!
-
-## Things You Should Do (and then delete this section)
-
-Thanks for using our template! We hope this makes your life developing significantly easier.
-Things you should do **after using this as a template**:
-
-- [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
-- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (@doubleiis02) if you need access to the Teach LA Netlify team.
-- [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
-- [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. You can optionally enable status checks, like passing `build`.
-- [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
-- [ ] update and delete this documentation!
-- [ ] contact Regina Wang (@reginawang99) or Matthew Nieva (@matthewcn56) with any questions about our quickstarter template set-up.
-
 ## FAQs
+
+- If Husky is yelling at you and not letting you commit when you want people to take a look at your stuff or make a draft pull request, simply add the `-n` flag to your commit message to skip Husky's auto-linting.
 
 - Our webpack set-up currently accepts asset files with the following extensions: `png,svg,jpg/jpeg,gifmp3`
 
@@ -53,6 +38,23 @@ Code for it can be seen in line 22 `webpack.dev.js`
 ```
 
 If you want to add more assets like `.pdf`, `.wav`, etc, you can simply change our webpack.dev.js file to allow more filetypes with a `|` inside of the parentheses. (This is a regex statement that we're using to test different file types)
+
+## Overview
+
+... explain what your project is here! What technology you used, who made it, and what it was for!
+
+## Things You Should Do (and then delete this section)
+
+Thanks for using our template! We hope this makes your life developing significantly easier.
+Things you should do **after using this as a template**:
+
+- [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
+- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (@doubleiis02) if you need access to the Teach LA Netlify team.
+- [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
+- [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. You can optionally enable status checks, like passing `build`.
+- [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
+- [ ] update and delete this documentation!
+- [ ] contact Regina Wang (@reginawang99) or Matthew Nieva (@matthewcn56) with any questions about our quickstarter template set-up.
 
 ## Development Setup
 
