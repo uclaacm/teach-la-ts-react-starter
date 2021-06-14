@@ -1,13 +1,10 @@
-import '../styles/Footer.scss';
-
-import TeachLALOGO from '../assets/teachla-logo.svg';
-
+import TeachLALogo from '../../../assets/teach-la-logo.svg';
+// import "footer.scss"
 function Footer(): JSX.Element {
   return (
     <div id="footer">
       <h3>
         Made with ❤️ by
-        {' '}
         {' '}
         <a
           href="https://teachla.uclaacm.com"
@@ -15,7 +12,7 @@ function Footer(): JSX.Element {
           rel="noopener noreferrer"
         >
           {' '}
-          <img id="tla-logo" src={TeachLALOGO} alt="teach la logo!" />
+          <img id="tla-logo" src={TeachLALogo} alt="teach la logo!" />
         </a>
       </h3>
     </div>
