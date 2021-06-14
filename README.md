@@ -20,25 +20,54 @@ What's this? This is a template repository that sets up a few minor systems for 
 
 ## FAQs
 
-- If Husky is yelling at you and not letting you commit when you want people to take a look at your stuff or make a draft pull request, simply add the `-n` flag to your commit message to skip Husky's auto-linting.
+### Husky is yelling at me and not letting me commit :(
+Add the `-n` flag to your commit message to skip Husky's auto-linting. 
 
-- Our webpack set-up currently accepts asset files with the following extensions: `png,svg,jpg/jpeg,gifmp3`
+EG: `git commit -m "changes" -n`
 
-Code for it can be seen in line 22 `webpack.dev.js`
+- Our webpack set-up currently accepts asset files with the following extensions: `png, svg, jpg/jpeg, gif, mp3`
+
+Code for it can be seen in line 22 `webpack.dev.js` and in `webpack.prod.js`
 
 ```
       {
-        test: /\.(png|svg|jpe?g|gif|mp3)$/i,
+        test: /\.(png|svg|jpe?g|gif|mp3)$/i, // we use regex to test different file types
         use: {
           loader: 'file-loader',
           options: {
             name: 'assets/[name].[ext]',
           },
-        },
+        },<YOUR_ASSET_TYPE>
       },
 ```
 
-If you want to add more assets like `.pdf`, `.wav`, etc, you can simply change our webpack.dev.js file to allow more filetypes with a `|` inside of the parentheses. (This is a regex statement that we're using to test different file types)
+If you want to add more assets like `.pdf`, `.wav`, `.mp4`, <YOUR_ASSET_TYPE> etc.
+- [ ] Update `webpack.dev.js` file. Change 
+```
+test: /\.(png|svg|jpe?g|gif|mp3)$/i
+``` 
+to 
+``` 
+test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i
+```
+- [ ] Update `webpack.prod.js` file. Change 
+```
+test: /\.(png|svg|jpe?g|gif|mp3)$/i,
+``` 
+to 
+``` 
+test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i
+```
+- [ ] (If typing is needed) add a folder under `custom_typing` => `import-<YOUR_ASSET_TYPE>`
+- [ ] (If typing is needed) create a file like `import-<YOUR_ASSET_TYPE>.d.ts`
+- [ ] (If typing is needed) add in this:
+```
+/* eslint-disable @typescript-eslint/no-explicit-any */
+declare module '*.<YOUR_ASSET_TYPE>' {
+  const value: <YOUR_ASSET_TYPE-TYPE>;
+  export default value;
+}
+```
 
 ## Overview
 
