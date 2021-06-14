@@ -14,7 +14,8 @@ coverage/
 # production
 build/
 
-# Never commit individual sessions.DS_Store
+# Never commit individual sessions
+.DS_Store
 .vscode/
 
 # misc

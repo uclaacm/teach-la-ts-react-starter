@@ -1,10 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-pwa-manifest')
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const PwaManifestPlugin = require('webpack-pwa-manifest')
+const { WebpackManifestPlugin: AssetManifestPlugin } = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-module.exports = {
+module.exports =  {
   entry: {
     index: './src/index.tsx',
   },
@@ -36,8 +36,9 @@ module.exports = {
       favicon: './public/favicon.svg',
       filename: './index.html',
     }),
+    // TODO: Update configurable info for ManifestPlugin
     // Serves the manifest.json file
-    new ManifestPlugin({
+    new PwaManifestPlugin({
       filename: "manifest.json",
       name: 'Your App Name Here',
       short_name: 'App Name',
@@ -58,7 +59,7 @@ module.exports = {
       fingerprints: false,
     }),
     // Serves a file `./asset-manifest.json` which indicates all the asset paths
-    new WebpackManifestPlugin({
+    new AssetManifestPlugin({
       fileName: 'asset-manifest.json'
     }),
     new CleanWebpackPlugin(),
