@@ -135,7 +135,7 @@ With Husky, we run `yarn lint-staged` automatically before you commit! If you wa
 
 ## Some More Helpful Tools
 
-- Preloading Images - if rendering images gets annoying because it's slow: [Link Example here]](https://github.com/uclaacm/Playnet/blob/c2414e7d1179eb11af6b4a49047ab3d8fb9aed66/src/components/shared/Preload.tsx)
+- Preloading Images - if rendering images gets annoying because it's slow: [Link Example here](https://github.com/uclaacm/Playnet/blob/c2414e7d1179eb11af6b4a49047ab3d8fb9aed66/src/components/shared/Preload.tsx)
 
 ## Licensing & Attribution
 
