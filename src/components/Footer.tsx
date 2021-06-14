@@ -1,25 +1,23 @@
-import "../../styles/Footer.scss";
+import '../styles/Footer.scss';
 
-import TeachLALOGO from "../../../assets/shared/logos/teachla-logo.svg";
+import TeachLALOGO from '../assets/teachla-logo.svg';
 
 function Footer(): JSX.Element {
   return (
-    <div id={"footer"}>
+    <div id="footer">
       <h3>
-        Made with ❤️ by{" "}
-        {" "}
+        Made with ❤️ by
+        {' '}
+        {' '}
         <a
-          href={"https://teachla.uclaacm.com"}
-          target={"_blank"}
-          rel={"noopener noreferrer"}
+          href="https://teachla.uclaacm.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {" "}
-          <img id={"tla-logo"} src={TeachLALOGO} />
+          {' '}
+          <img id="tla-logo" src={TeachLALOGO} alt="teach la logo!" />
         </a>
       </h3>
-      <p id={"disclaimer"}>
-        Not sponsored by or affiliated with Youtube or its subsidiaries.
-      </p>
     </div>
   );
 }
