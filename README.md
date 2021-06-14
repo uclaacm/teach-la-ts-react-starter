@@ -135,15 +135,17 @@ yarn run build
 ```
 
 ## Contribution Workflow
+Thanks for your interest in contributing to YOUR_PROJECT_URL_HERE! ❤️
 
-Want to make a change? Great! Here are the steps:
+Here's a quick guide on how to get started.
 
 1. Either make a new branch or a fork of this repository. `main` is a protected branch, **so you cannot push to it**.
 2. Follow the instructions in "Development Setup" above. If you're on a fork, replace the URL with the fork's URL; if you're on a different branch, check it out using `git checkout`.
-3. Make your changes!
+3. Beep boop away!
 4. **Before you push**, make sure your app runs with `yarn start`. If there are any errors, our CI/CD service will **reject your build**.
 5. Once you're ready, stage and commit your changes!
-6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
+6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know. 
+  a. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
 7. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
 
 ## Helpful Commands
@@ -160,7 +162,7 @@ With Husky, we run `yarn lint-staged` automatically before you commit! If you wa
 
 ## Some More Helpful Tools
 
-- Preloading Images if it gets rendering images gets annoying: [Link Example here]](https://github.com/uclaacm/Playnet/blob/c2414e7d1179eb11af6b4a49047ab3d8fb9aed66/src/components/shared/Preload.tsx)
+- Preloading Images - if rendering images gets annoying because it's slow: [Link Example here]](https://github.com/uclaacm/Playnet/blob/c2414e7d1179eb11af6b4a49047ab3d8fb9aed66/src/components/shared/Preload.tsx)
 
 ## Licensing & Attribution
 
