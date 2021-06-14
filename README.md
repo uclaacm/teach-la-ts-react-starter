@@ -46,7 +46,7 @@ If you want to add more assets like `.pdf`, `.wav`, `.mp4`, <YOUR_ASSET_TYPE> et
 - [ ] Update `webpack.prod.js` file. Change `test: /\.(png|svg|jpe?g|gif|mp3)$/i,` to `test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i`
 - [ ] (If typing is needed) add a folder under `custom_typing` => `import-<YOUR_ASSET_TYPE>`
 - [ ] (If typing is needed) create a file like `import-<YOUR_ASSET_TYPE>.d.ts`
-- [ ] (If typing is needed) add in this:
+- [ ] (If typing is needed) add in:
 ```
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare module '*.<YOUR_ASSET_TYPE>' {
@@ -66,12 +66,12 @@ Thanks for using our template! We hope this makes your life developing significa
 Things you should do **after using this as a template**:
 
 - [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
-- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (@doubleiis02) if you need access to the Teach LA Netlify team.
+- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (`@doubleiis02`) if you need access to the Teach LA Netlify team.
 - [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
 - [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. You can optionally enable status checks, like passing `build`.
 - [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
 - [ ] update and delete this documentation!
-- [ ] contact Regina Wang (@reginawang99) or Matthew Nieva (@matthewcn56) with any questions about our quickstarter template set-up.
+- [ ] contact Regina Wang (`@reginawang99`) or Matthew Nieva (`@matthewcn56`) with any questions about our quickstarter template set-up.
 
 ## Development Setup
 
@@ -79,45 +79,34 @@ We'll use a really common Node.js project workflow + Yarn!
 First, let's clone our repository, and install all of our yarn dependencies:
 
 ```
-
 git clone https://github.com/uclaacm/YOUR_PROJECT_URL_HERE.git
 cd YOUR_PROJECT_URL_HERE
-
 ```
 
 If you don't have yarn installed...
 
 ```
-
 npm install --global yarn
-
 ```
 
 Then install our dependencies!
 
 ```
-
 yarn install
-
 yarn prepare
-
 ```
 
 (We handle the yarn and npm conflict issues within our `.gitignore` we set up so dw about it!)
 To start our app, you just need to run `yarn start`!
 
 ```
-
 yarn start
-
 ```
 
 And to build our project for production (with CRA and Webpack's bundling with all that goodness),
 
 ```
-
 yarn run build
-
 ```
 
 ## Contribution Workflow
@@ -139,9 +128,7 @@ Here's a quick guide on how to get started.
 By running `yarn lint-fix` we can use the linter that we set-up to format our code the way that passes our style checks! Before you commit your changes and submit a pull request, make sure to run
 
 ```
-
 yarn lint-fix
-
 ```
 
 With Husky, we run `yarn lint-staged` automatically before you commit! If you want to lint before commiting, you can run `yarn lint-fix`.
