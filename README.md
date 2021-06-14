@@ -42,22 +42,8 @@ Code for it can be seen in line 22 `webpack.dev.js` and in `webpack.prod.js`
 ```
 
 If you want to add more assets like `.pdf`, `.wav`, `.mp4`, <YOUR_ASSET_TYPE> etc.
-- [ ] Update `webpack.dev.js` file. Change 
-```
-test: /\.(png|svg|jpe?g|gif|mp3)$/i
-``` 
-to 
-``` 
-test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i
-```
-- [ ] Update `webpack.prod.js` file. Change 
-```
-test: /\.(png|svg|jpe?g|gif|mp3)$/i,
-``` 
-to 
-``` 
-test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i
-```
+- [ ] Update `webpack.dev.js` file. Change `test: /\.(png|svg|jpe?g|gif|mp3)$/i` to `test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i`
+- [ ] Update `webpack.prod.js` file. Change `test: /\.(png|svg|jpe?g|gif|mp3)$/i,` to `test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i`
 - [ ] (If typing is needed) add a folder under `custom_typing` => `import-<YOUR_ASSET_TYPE>`
 - [ ] (If typing is needed) create a file like `import-<YOUR_ASSET_TYPE>.d.ts`
 - [ ] (If typing is needed) add in this:
