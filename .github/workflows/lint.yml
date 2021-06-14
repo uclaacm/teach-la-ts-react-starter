@@ -1,5 +1,5 @@
-name: Simple Lint
-on: pull_request
+name: Lint
+on: [push]
 
 jobs:
   run-linters:

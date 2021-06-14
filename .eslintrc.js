@@ -8,7 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    'airbnb-typescript',
+    'airbnb-typescript', // side note: extends off of `eslint-config-airbnb`
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,7 +25,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    // A few more opinions in addition to the Airbnb TS Lint Config
+    // A few more opinions in addition to extensions
 
     // As per React 17 changes! https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
     'react/react-in-jsx-scope': 'off',
