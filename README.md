@@ -3,6 +3,7 @@
 ![Production Build](https://github.com/uclaacm/teach-la-react-starter-barebones/workflows/Production%20Build/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
 What's this? This is a template repository that sets up a few minor systems for a React micro-app, which is something that we've done frequently at Teach LA. Here's what it does:
 
 - has the latest, dependabot-certified version of `create-react-app` and dependencies
@@ -46,6 +47,7 @@ If you want to add more assets like `.pdf`, `.wav`, etc, you can simply change o
 ## Things You Should Do (and then delete this section)
 
 Thanks for using our template! We hope this makes your life developing significantly easier.
+
 Things you should do **after using this as a template**:
 
 - [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
@@ -80,7 +82,9 @@ Then install our dependencies!
 
 ```
 
-yarn add
+yarn install
+
+yarn prepare
 
 ```
 
