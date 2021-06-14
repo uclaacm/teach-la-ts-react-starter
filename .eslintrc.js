@@ -26,6 +26,8 @@ module.exports = {
   ],
   rules: {
     // A few more opinions in addition to the Airbnb TS Lint Config
+
+    // As per React 17 changes! https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
     
