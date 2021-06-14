@@ -28,13 +28,13 @@ Add the `-n` flag to your commit message to skip Husky's auto-linting.
 EG: `git commit -m "changes" -n`
 
 ### Assets are angry and won't accept <x filetype>
-Our webpack set-up currently accepts asset files with the following extensions: `png, svg, jpg/jpeg, gif, mp3`
+Our webpack set-up currently accepts asset files with the following extensions: `png, svg, jpg/jpeg, gif, mp3, ttf`
 
 Code for it can be seen in line 22 `webpack.dev.js` and in `webpack.prod.js`
 
 ```
       {
-        test: /\.(png|svg|jpe?g|gif|mp3)$/i, // we use regex to test different file types
+        test: /\.(png|svg|jpe?g|gif|mp3|ttf)$/i, // we use regex to test different file types
         use: {
           loader: 'file-loader',
           options: {
@@ -120,14 +120,6 @@ And to build our project for production (with CRA and Webpack's bundling with al
 ```
 yarn run build
 ```
-
-### Before you start coding...
-
-To match ACM's design standards, we will be using Westwood Sans (built by ACM Design) as our font for our learning labs! You can find the font file in `src/assets/WestwoodSans-Regular.ttf`. Here's how you can install the font on your computer:
-  - Mac: double-click on the file from finder and Font Book will pop up. Click on the `Install Font` button in the bottom right corner.
-  - Windows: right-click the file and select Install.
-
-Westwood Sans is already set as the default font-family for your learning lab, so now you should be good to go!
 
 ## Contribution Workflow
 
