@@ -11,8 +11,8 @@ What's this? This is a template repository that sets up a few minor systems for 
 - has a default Dependabot config for `yarn` (with monthly audits)
 - has Netlify redirects set up for multi-route SPAs
 - has Webpack that helps bundle JS/TS files for browser usage
-- Husky for Git Hooks which fixes lint for files on commit
-- ESLint with `typescript-airbnb` rules for our TS files
+- Husky for Git Hooks which enforces linting rules for files on commit
+- ESLint with `typescript-airbnb` rules for our .TS and .TSX files
 - StyleLint with SASS guidelines for CSS, SASS, SCSS stylesheets.
 - includes the [Contributor Covenant](https://www.contributor-covenant.org/) in `CODE_OF_CONDUCT.md`
 - has a little bit of documentation for new people!
@@ -21,7 +21,8 @@ What's this? This is a template repository that sets up a few minor systems for 
 ## FAQs
 
 ### Husky is yelling at me and not letting me commit :(
-Add the `-n` flag to your commit message to skip Husky's auto-linting. 
+
+Add the `-n` flag to your commit message to skip Husky's auto-linting.
 
 EG: `git commit -m "changes" -n`
 
@@ -37,16 +38,18 @@ Code for it can be seen in line 22 `webpack.dev.js` and in `webpack.prod.js`
           options: {
             name: 'assets/[name].[ext]',
           },
-        },<YOUR_ASSET_TYPE>
+        },
       },
 ```
 
 If you want to add more assets like `.pdf`, `.wav`, `.mp4`, <YOUR_ASSET_TYPE> etc.
+
 - [ ] Update `webpack.dev.js` file. Change `test: /\.(png|svg|jpe?g|gif|mp3)$/i` to `test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i`
 - [ ] Update `webpack.prod.js` file. Change `test: /\.(png|svg|jpe?g|gif|mp3)$/i,` to `test: /\.(png|svg|jpe?g|gif|mp3|<YOUR_ASSET_TYPE>)$/i`
 - [ ] (If typing is needed) add a folder under `custom_typing` => `import-<YOUR_ASSET_TYPE>`
 - [ ] (If typing is needed) create a file like `import-<YOUR_ASSET_TYPE>.d.ts`
 - [ ] (If typing is needed) add in:
+
 ```
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare module '*.<YOUR_ASSET_TYPE>' {
@@ -110,6 +113,7 @@ yarn run build
 ```
 
 ## Contribution Workflow
+
 Thanks for your interest in contributing to YOUR_PROJECT_URL_HERE! ❤️
 
 Here's a quick guide on how to get started.
@@ -119,8 +123,8 @@ Here's a quick guide on how to get started.
 3. Beep boop away!
 4. **Before you push**, make sure your app runs with `yarn start`. If there are any errors, our CI/CD service will **reject your build**.
 5. Once you're ready, stage and commit your changes!
-6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know. 
-  a. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
+6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know.
+   a. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
 7. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
 
 ## Helpful Commands
