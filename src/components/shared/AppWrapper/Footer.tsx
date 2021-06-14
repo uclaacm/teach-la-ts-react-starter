@@ -1,5 +1,4 @@
 import TeachLALogo from '../../../assets/teach-la-logo.svg';
-// import "footer.scss"
 function Footer(): JSX.Element {
   return (
     <div id="footer">

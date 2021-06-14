@@ -58,7 +58,7 @@
     "webpack-pwa-manifest": "^4.3.0"
   },
   "lint-staged": {
-    "*.(js|jsx|ts|tsx)": "eslint --cache --fix",
+    "*.(ts|tsx)": "eslint --cache --fix",
     "*.(css|scss|sass)": "stylelint --fix"
   }
 }

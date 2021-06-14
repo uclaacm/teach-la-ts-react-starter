@@ -3,12 +3,12 @@ import Footer from './Footer';
 import Header from './Header';
 import '../../../styles/AppWrapper.scss';
 
-export interface WrapperProps {
+export interface AppWrapperProps {
   section: HeaderSections;
   children?: JSX.Element | string;
 }
 
-export default function AppWrapper(props: WrapperProps): JSX.Element {
+export default function AppWrapper(props: AppWrapperProps): JSX.Element {
   return (
     <div id="app-wrapper">
       <Header section={props.section} />

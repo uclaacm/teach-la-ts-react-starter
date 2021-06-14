@@ -1,6 +1,9 @@
 import { HeaderSections } from '../globalTypes';
 
-// We can use our enum as the specified type that our HeaderProps recieves
+/**
+ * We can use our enum as the specified type that our HeaderProps recieves
+ * Type our React Element with an interface
+ */
 export interface HeaderProps {
   section: HeaderSections;
 }
