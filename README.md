@@ -23,7 +23,7 @@ What's this? This is a template repository that sets up a few minor systems for 
 ### Some lint is unnecessary :( How do I disable it?
 There are actually 2 main ways to disable lint. Disabling the "rule" entirely, or in just a single line or file!
 #### Disabling the rule entirely.
-** **Make sure this is what you really want!! It is often likely that you want to just disable for a single file.** **
+** **Make sure this is what you really want!! It is often likely that you want to disable for just a single file.** **
 
 Depending on whether it's from `stylelint` or `eslint`, you can go to `stylelintrc.json` and add to `"rules"
 ```
@@ -46,6 +46,8 @@ or
 ```
 // eslint-disable-next-line
 ```
+
+The process for `stylelint` is very similar.
 
 ### Husky is yelling at me and not letting me commit :(
 
