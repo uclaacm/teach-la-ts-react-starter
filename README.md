@@ -21,7 +21,7 @@ What's this? This is a template repository that sets up a few minor systems for 
 ## FAQs
 
 ### Some lint is unnecessary :( How do I disable it?
-There are actually 2 main ways to disable lint. Disabling the "rule" entirely, or just a single instance/in a file!
+There are actually 2 main ways to disable lint. Disabling the "rule" entirely, or in just a single line or file!
 #### Disabling the rule entirely.
 ** **Make sure this is what you really want!! It is often likely that you want to just disable for a single file.** **
 
@@ -33,7 +33,7 @@ or `eslintrc.json` and add
 ```
 '<rule-name>': 'off',
 ```
-#### Disabling a single instance/in a single file
+#### Disabling a rule for a single line or file
 Take a look at the eslint docs for this: https://eslint.org/docs/user-guide/configuring/rules#disabling-rules
 
 Or the stylelint docs for this: https://stylelint.io/user-guide/ignore-code/
