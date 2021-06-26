@@ -34,7 +34,17 @@ or `eslintrc.json` and add
 ```
 #### Disabling a single instance/in a single file
 Take a look at the eslint docs for this: https://eslint.org/docs/user-guide/configuring/rules#disabling-rules
+
 Or the stylelint docs for this: https://stylelint.io/user-guide/ignore-code/
+
+It's pretty simple tho, something like 
+```
+/* eslint-disable <rule-name> */
+```
+or 
+```
+// eslint-disable-next-line
+```
 
 ### Husky is yelling at me and not letting me commit :(
 
