@@ -20,6 +20,22 @@ What's this? This is a template repository that sets up a few minor systems for 
 
 ## FAQs
 
+### Some lint is unnecessary :( How do I disable it?
+There are actually 2 main ways to disable lint. Disabling the "rule" entirely, or just a single instance/in a file!
+#### Disabling the rule entirely.
+** Make sure this is what you really want!! Maybe instead, you wanna just disable for a single file :) **
+Depending on whether it's from `stylelint` or `eslint`, you can go to `stylelintrc.json` and add to `"rules"
+```
+<rule-name>: null
+```
+or `eslintrc.json` and add
+```
+'<rule-name>': 'off',
+```
+#### Disabling a single instance/in a single file
+Take a look at the eslint docs for this: https://eslint.org/docs/user-guide/configuring/rules#disabling-rules
+Or the stylelint docs for this: https://stylelint.io/user-guide/ignore-code/
+
 ### Husky is yelling at me and not letting me commit :(
 
 Add the `-n` flag to your commit message to skip Husky's auto-linting.
