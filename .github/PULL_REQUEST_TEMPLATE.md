@@ -9,9 +9,11 @@
 Closes #<!-- issue number -->
 
 <!-- Enumerate changes you made and why you made them -->
-
-## Additional Information
-
 <!-- list any new dependencies required for this change -->
 
-<!-- screenshots of relevant media, if applicable -->
+## Test Plan
+
+<!--
+    How did you manually test your change? How do you know that your code works?
+    Add supporting screenshots of the feature in play, terminal pastes, etc. as necessary
+-->
