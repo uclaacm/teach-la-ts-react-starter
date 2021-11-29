@@ -31,9 +31,9 @@ Things you should do **after using this as a template**:
 - [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
 - [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (`@doubleiis02`) if you need access to the Teach LA Netlify team.
 - [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
-      squash commit only
 - [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. Also require status checks, like passing `build`.
-- [ ] set pull requests to be squashed and merged by default (squashing merging the first PR will set squash & merge to be the default for all future PRs).
+- [ ] _only_ enable squash merging in Github `Settings > Options > Merge Button` (and disable merge commits and rebase merging).
+- [ ] this is a reminder to periodically run Search Engine Optimization on your project by running `inspect element / developer tools > Lighthouse`
 - [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
 - [ ] update and delete this documentation!
 - [ ] update `public/index.html` to have a description and title
@@ -103,32 +103,42 @@ yarn lint-fix
 
 With Husky, we run `yarn lint-staged` automatically before you commit! If you want to lint before commiting, you can run `yarn lint-fix`.
 
-
 ## FAQs
 
 ### Some lint is unnecessary :( How do I disable it?
+
 There are actually 2 main ways to disable lint. Disabling the "rule" entirely, or in just a single line or file!
+
 #### Disabling the rule entirely.
-** **Make sure this is what you really want!! It is often likely that you want to disable for just a single file.** **
+
+\*\* **Make sure this is what you really want!! It is often likely that you want to disable for just a single file.** \*\*
 
 Depending on whether it's from `stylelint` or `eslint`, you can go to `stylelintrc.json` and add to `"rules"
+
 ```
 <rule-name>: null
 ```
+
 or `eslintrc.json` and add
+
 ```
 '<rule-name>': 'off',
 ```
+
 #### Disabling a rule for a single line or file
+
 Take a look at the eslint docs for this: https://eslint.org/docs/user-guide/configuring/rules#disabling-rules
 
 Or the stylelint docs for this: https://stylelint.io/user-guide/ignore-code/
 
-It's pretty simple though, it'd look something like 
+It's pretty simple though, it'd look something like
+
 ```
 /* eslint-disable <rule-name> */
 ```
-or 
+
+or
+
 ```
 // eslint-disable-next-line
 ```
@@ -142,6 +152,7 @@ Add the `-n` flag to your commit message to skip Husky's auto-linting.
 EG: `git commit -m "changes" -n`
 
 ### Assets are angry and won't accept <x filetype>
+
 Our webpack set-up currently accepts asset files with the following extensions: `png, svg, jpg/jpeg, gif, mp3, ttf`
 
 Code for it can be seen in line 22 `webpack.dev.js` and in `webpack.prod.js`
@@ -173,8 +184,9 @@ declare module '*.<YOUR_ASSET_TYPE>' {
   export default value;
 }
 ```
-      
+
 ### How can I tell if my asset is actually being served?
+
 Take a look at `<YOUR_PROJECT_PATH>/asset-manifest.json`. [Like this!](https://teach-la-ts-react-starter.netlify.app/asset-manifest.json)
 
 ## Some More Helpful Tools
