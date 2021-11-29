@@ -33,12 +33,12 @@ Things you should do **after using this as a template**:
 - [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
 - [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. Also require status checks, like passing `build`.
 - [ ] _only_ enable squash merging in Github `Settings > Options > Merge Button` (and disable merge commits and rebase merging).
-- [ ] this is a reminder to periodically run Search Engine Optimization on your project by running `inspect element / developer tools > Lighthouse`
+- [ ] this is a reminder to periodically run accessibility checks & Search Engine Optimization on your project by running `inspect element / developer tools > Lighthouse`
 - [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
 - [ ] update and delete this documentation!
 - [ ] update `public/index.html` to have a description and title
 - [ ] update `public/favicon.svg` and `public/favaicon512.png` as needed
-- [ ] contact Regina Wang (`@reginawang99`) or Matthew Nieva (`@matthewcn56`) with any questions about our quickstarter template set-up.
+- [ ] contact Regina Wang (`@reginawang99`), Matthew Nieva (`@matthewcn56`), or Jiin Kim (`@doubleiis02`) with any questions about our quickstarter template set-up.
 
 ## Development Setup
 
