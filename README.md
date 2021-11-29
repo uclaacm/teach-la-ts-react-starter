@@ -18,6 +18,92 @@ What's this? This is a template repository that sets up a few minor systems for 
 - has a little bit of documentation for new people!
 - Some extra stuff like changing the app logo to TeachLA's logo and setting up the `src` directory for further development!
 
+## Overview
+
+... explain what your project is here! What technology you used, who made it, and what it was for!
+
+## Things You Should Do (and then delete this section)
+
+Thanks for using our template! We hope this makes your life developing significantly easier.
+
+Things you should do **after using this as a template**:
+
+- [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
+- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (`@doubleiis02`) if you need access to the Teach LA Netlify team.
+- [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
+      squash commit only
+- [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. Also require status checks, like passing `build`.
+- [ ] set pull requests to be squashed and merged by default (squashing merging the first PR will set squash & merge to be the default for all future PRs).
+- [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
+- [ ] update and delete this documentation!
+- [ ] update `public/index.html` to have a description and title
+- [ ] update `public/favicon.svg` and `public/favaicon512.png` as needed
+- [ ] contact Regina Wang (`@reginawang99`) or Matthew Nieva (`@matthewcn56`) with any questions about our quickstarter template set-up.
+
+## Development Setup
+
+We'll use a really common Node.js project workflow + Yarn!
+First, let's clone our repository, and install all of our yarn dependencies:
+
+```
+git clone https://github.com/uclaacm/YOUR_PROJECT_URL_HERE.git
+cd YOUR_PROJECT_URL_HERE
+```
+
+If you don't have yarn installed...
+
+```
+npm install --global yarn
+```
+
+Then install our dependencies!
+
+```
+yarn install
+yarn prepare
+```
+
+(If the above commands don't work even after installing yarn via npm, check this [npm installation guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable), click on alternatives, choose your operating system, and follow the steps there!)
+
+(We handle the yarn and npm conflict issues within our `.gitignore` we set up so dw about it!)
+To start our app, you just need to run `yarn start`!
+
+```
+yarn start
+```
+
+And to build our project for production (with CRA and Webpack's bundling with all that goodness),
+
+```
+yarn run build
+```
+
+## Contribution Workflow
+
+Thanks for your interest in contributing to YOUR_PROJECT_URL_HERE! ❤️
+
+Here's a quick guide on how to get started.
+
+1. Either make a new branch or a fork of this repository. `main` is a protected branch, **so you cannot push to it**.
+2. Follow the instructions in "Development Setup" above. If you're on a fork, replace the URL with the fork's URL; if you're on a different branch, check it out using `git checkout`.
+3. Beep boop away!
+4. **Before you push**, make sure your app runs with `yarn start`. If there are any errors, our CI/CD service will **reject your build**.
+5. Once you're ready, stage and commit your changes!
+6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know.
+   a. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
+7. If your code passes code review, then we can **squash and merge** it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
+
+## Helpful Commands
+
+By running `yarn lint-fix` we can use the linter that we set-up to format our code the way that passes our style checks! Before you commit your changes and submit a pull request, make sure to run
+
+```
+yarn lint-fix
+```
+
+With Husky, we run `yarn lint-staged` automatically before you commit! If you want to lint before commiting, you can run `yarn lint-fix`.
+
+
 ## FAQs
 
 ### Some lint is unnecessary :( How do I disable it?
@@ -90,89 +176,6 @@ declare module '*.<YOUR_ASSET_TYPE>' {
       
 ### How can I tell if my asset is actually being served?
 Take a look at `<YOUR_PROJECT_PATH>/asset-manifest.json`. [Like this!](https://teach-la-ts-react-starter.netlify.app/asset-manifest.json)
-
-## Overview
-
-... explain what your project is here! What technology you used, who made it, and what it was for!
-
-## Things You Should Do (and then delete this section)
-
-Thanks for using our template! We hope this makes your life developing significantly easier.
-
-Things you should do **after using this as a template**:
-
-- [ ] find-and-replace `YOUR_PROJECT_URL_HERE` with your GitHub repo's project name in this README (it's in a few places, so use an editor!)
-- [ ] set up [Netlify](https://www.netlify.com/) for this app - talk to jiin (`@doubleiis02`) if you need access to the Teach LA Netlify team.
-- [ ] turn on "Automatically delete head branches" in GitHub `Settings > Options`
-- [ ] in `Settings > Branches`, create a branch protection rule for `main` that requires PR reviews. You can optionally enable status checks, like passing `build`.
-- [ ] update the README badges for the GitHub Actions and Netlify with the correct links!
-- [ ] update and delete this documentation!
-- [ ] update `public/index.html` to have a description and title
-- [ ] update `public/favicon.svg` and `public/favaicon512.png` as needed
-- [ ] contact Regina Wang (`@reginawang99`) or Matthew Nieva (`@matthewcn56`) with any questions about our quickstarter template set-up.
-
-## Development Setup
-
-We'll use a really common Node.js project workflow + Yarn!
-First, let's clone our repository, and install all of our yarn dependencies:
-
-```
-git clone https://github.com/uclaacm/YOUR_PROJECT_URL_HERE.git
-cd YOUR_PROJECT_URL_HERE
-```
-
-If you don't have yarn installed...
-
-```
-npm install --global yarn
-```
-
-Then install our dependencies!
-
-```
-yarn install
-yarn prepare
-```
-
-(If the above commands don't work even after installing yarn via npm, check this [npm installation guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable), click on alternatives, choose your operating system, and follow the steps there!)
-
-(We handle the yarn and npm conflict issues within our `.gitignore` we set up so dw about it!)
-To start our app, you just need to run `yarn start`!
-
-```
-yarn start
-```
-
-And to build our project for production (with CRA and Webpack's bundling with all that goodness),
-
-```
-yarn run build
-```
-
-## Contribution Workflow
-
-Thanks for your interest in contributing to YOUR_PROJECT_URL_HERE! ❤️
-
-Here's a quick guide on how to get started.
-
-1. Either make a new branch or a fork of this repository. `main` is a protected branch, **so you cannot push to it**.
-2. Follow the instructions in "Development Setup" above. If you're on a fork, replace the URL with the fork's URL; if you're on a different branch, check it out using `git checkout`.
-3. Beep boop away!
-4. **Before you push**, make sure your app runs with `yarn start`. If there are any errors, our CI/CD service will **reject your build**.
-5. Once you're ready, stage and commit your changes!
-6. Make a [pull request](https://github.com/uclaacm/YOUR_PROJECT_URL_HERE/pulls) with your changes, and let someone on your project team know.
-   a. Netlify has a neat feature called "Deploy Previews" that give you a link to preview your changes; [see the blog post](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) for more info!
-7. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch/fork.
-
-## Helpful Commands
-
-By running `yarn lint-fix` we can use the linter that we set-up to format our code the way that passes our style checks! Before you commit your changes and submit a pull request, make sure to run
-
-```
-yarn lint-fix
-```
-
-With Husky, we run `yarn lint-staged` automatically before you commit! If you want to lint before commiting, you can run `yarn lint-fix`.
 
 ## Some More Helpful Tools
 
