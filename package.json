@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-env": "^7.16.7",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.14.5",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
@@ -39,7 +39,7 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.2",
+    "husky": "^7.0.4",
     "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^2.4.5",
     "sass": "^1.44.0",
