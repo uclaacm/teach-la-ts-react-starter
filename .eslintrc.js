@@ -8,6 +8,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
+
+    // override all prettier rules, see https://github.com/prettier/eslint-config-prettier
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,7 +24,7 @@ module.exports = {
   plugins: ['import', 'react', '@typescript-eslint'],
   rules: {
     // A few more opinions in addition to extensions
-    
+
     // Enforce new line at end of file
     'eol-last': ['error', 'always'],
 
@@ -44,8 +47,8 @@ module.exports = {
     // Style
     quotes: ['error', 'single', { avoidEscape: true }],
 
-    // ensures clean diffs, see https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8
-    'comma-dangle': ['error', 'always-multiline'],
+    // Covered by prettier
+    'comma-dangle': 'off',
 
     // Require all imported dependencies are actually declared in package.json
     'import/no-extraneous-dependencies': [
