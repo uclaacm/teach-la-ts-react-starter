@@ -22,6 +22,9 @@ module.exports = {
   rules: {
     // A few more opinions in addition to extensions
 
+    // Enforce new line at end of file
+    'eol-last': ['error', 'always'],
+
     // As per React 17 changes! https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
@@ -69,8 +72,8 @@ module.exports = {
 
     // Cannot shadow names
     // note you must disable the base rule as it can report incorrect errors
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
 
     // Required spacing in property declarations (copied from TSLint, defaults are good)
     'key-spacing': ['error'],
@@ -100,8 +103,8 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': ['error'],
 
     // Don't leave log statements littering the premises!
-    'no-console': ["error", { allow: ["info", "warn", "error"] }],
-    
+    'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+
     // Useless diff results
     'no-trailing-spaces': ['error'],
 

@@ -6,6 +6,7 @@
     "lint-staged": "lint-staged",
     "lint": "eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\"",
+    "prettier": "prettier --write .",
     "pre-commit": "lint-staged; exit 0",
     "prepare": "husky install"
   },
