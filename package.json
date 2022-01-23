@@ -3,11 +3,10 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint-staged": "lint-staged",
     "lint": "eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\"",
     "prettier": "prettier --write .",
-    "pre-commit": "lint-staged; exit 0",
+    "pre-commit": "yarn lint-fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -41,7 +40,6 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
-    "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^2.4.5",
     "sass": "^1.44.0",
     "sass-loader": "^12.4.0",
@@ -59,10 +57,5 @@
     "webpack-merge": "^5.8.0",
     "webpack-nano": "^1.1.1",
     "webpack-pwa-manifest": "^4.3.0"
-  },
-  "lint-staged": {
-    "*.(ts|tsx)": "eslint --cache --fix",
-    "*.(css|scss|sass)": "stylelint --fix",
-    "*.{ts,tsx,css,scss,sass,md}": "prettier --write"
   }
 }
