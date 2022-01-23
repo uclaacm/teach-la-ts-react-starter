@@ -5,7 +5,6 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint \"**/*.tsx\" \"**/*.ts\" && npx stylelint \"**/*.css\" \"**/*.scss\"",
     "lint-fix": "eslint --fix \"**/*.tsx\" \"**/*.ts\" && npx stylelint --fix \"**/*.css\" \"**/*.scss\"",
-    "prettier": "prettier --write .",
     "pre-commit": "yarn lint-fix",
     "prepare": "husky install"
   },
@@ -14,7 +13,6 @@
     "@types/react-dom": "^17.0.10",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
-    "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

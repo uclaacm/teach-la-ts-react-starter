@@ -21,7 +21,7 @@ module.exports = {
   plugins: ['import', 'react', '@typescript-eslint'],
   rules: {
     // A few more opinions in addition to extensions
-
+    
     // Enforce new line at end of file
     'eol-last': ['error', 'always'],
 
@@ -30,6 +30,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
 
     'linebreak-style': ['error', 'unix'],
+    'no-multiple-empty-lines': 'error',
 
     '@typescript-eslint/no-require-imports': ['error'],
 
