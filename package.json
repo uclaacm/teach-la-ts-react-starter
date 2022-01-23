@@ -50,7 +50,6 @@
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^22.0.0",
     "ts-loader": "^9.2.4",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.5.2",
     "url-loader": "^4.1.1",
     "webpack": "^5.61.0",
