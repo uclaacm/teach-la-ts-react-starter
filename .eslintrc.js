@@ -25,16 +25,12 @@ module.exports = {
   rules: {
     // A few more opinions in addition to extensions
 
-    // Enforce new line at end of file
-    'eol-last': ['error', 'always'],
-
     // As per React 17 changes! https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
 
     'linebreak-style': ['error', 'unix'],
-    'no-multiple-empty-lines': 'error',
-
+    
     '@typescript-eslint/no-require-imports': ['error'],
 
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -46,9 +42,6 @@ module.exports = {
 
     // Style
     quotes: ['error', 'single', { avoidEscape: true }],
-
-    // Covered by prettier
-    'comma-dangle': 'off',
 
     // Require all imported dependencies are actually declared in package.json
     'import/no-extraneous-dependencies': [
