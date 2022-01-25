@@ -30,7 +30,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
 
     'linebreak-style': ['error', 'unix'],
-    
+
     '@typescript-eslint/no-require-imports': ['error'],
 
     '@typescript-eslint/no-non-null-assertion': 'off',
