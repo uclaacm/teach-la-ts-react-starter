@@ -1,6 +1,6 @@
 import AppWrapper from './shared/AppWrapper';
 import { HeaderSections } from './shared/globalTypes';
-require '../assets/WestwoodSans-Regular.ttf';
+import '../assets/WestwoodSans-Regular.ttf';
 
 function App(): JSX.Element {
   return (
