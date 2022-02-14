@@ -37,8 +37,8 @@ module.exports = {
 
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 
-    // 2 space indentation
-    '@typescript-eslint/indent': ['error', 2],
+    // Use prettier indentation rules as opposed to eslint
+    '@typescript-eslint/indent': 'off',
 
     // Style
     quotes: ['error', 'single', { avoidEscape: true }],
